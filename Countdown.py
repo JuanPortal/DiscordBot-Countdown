@@ -32,8 +32,7 @@ async def cd(ctx, arg):
     while cuenta >= 0 and continuar:
         m, s = divmod(cuenta, 60)
         h, m = divmod(m, 60)
-        time_left = str(h).zfill(2) + ":" + str(m).zfill(2) + ":" + str(
-            s).zfill(2) + "\n"
+        time_left = str(h).zfill(2) + ":" + str(m).zfill(2) + ":" + str(s).zfill(2) + "\n"
         time.sleep(1)
         await ctx.channel.send(time_left)
         cuenta -= 1
