@@ -2,7 +2,7 @@ from discord.ext import commands
 import discord
 import time
 
-client = commands.Bot(command_prefix="$")
+client = commands.Bot(command_prefix="$", intents=discord.Intents.all())
 
 client.remove_command("help")
 
