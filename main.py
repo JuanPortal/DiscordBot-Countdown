@@ -9,7 +9,7 @@ client.remove_command("help")
 
 @client.event
 async def on_ready():
-    print("Countdown's ready to go!")
+    print("Timer's ready to go!")
 
 
 global keep_going
@@ -48,8 +48,7 @@ async def stop(ctx):
 async def help(ctx):
     em = discord.Embed(
         title="Help",
-        description="mm:ss or just type the minutes\n\n***$cd*** starts the countdown\n\n***$stop*** stops \
-         the countdown"
+        description="$mm:ss or just type the minutes\n\n***$cd*** starts the timer\n\n***$stop*** stops the timer"
     )
     await ctx.send(embed=em)
 
